@@ -14,3 +14,13 @@ resource "docker_container" "container_1"{
 		external = "80"}
 }
 
+#output container name and ip address
+
+output "IP Address"{
+	value = "docker_container.container_1.ip_address"
+}
+
+output "Container Name"{
+	value = "docker_container.container_1.name"
+}
+	
